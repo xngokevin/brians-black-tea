@@ -20,7 +20,7 @@ import {
 function App() {
   return (
       <Router>
-          <div style={{paddingTop: 100}}>
+          <div>
               <Header/>
               <Route exact path='/' component={Home}/>
               <Route exact path='/products' component={Products}/>
