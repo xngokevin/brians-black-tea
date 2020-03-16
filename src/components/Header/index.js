@@ -3,13 +3,14 @@ import { Container, Nav, Button } from 'react-bootstrap';
 import {
     Link
 } from "react-router-dom";
+// import "./../../assets/scss/components/Header.scss";
 
 class Header extends Component {
 
 
     render() {
         return (
-            <Nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <Nav className={["navbar navbar-expand-md navbar-dark bg-dark fixed-top ", false ? 'test' : '']}>
                 <Container>
                     <Link className="navbar-brand" to={'/'}>
                         <img src="http://placehold.it/150x50?text=Logo" alt=""/>

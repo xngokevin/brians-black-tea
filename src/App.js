@@ -1,10 +1,9 @@
 import React from 'react';
 import Header from './components/Header'
-import './assets/css/main.min.css';
+import './assets/css/main.css';
 import 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'
-import { Container } from 'react-bootstrap';
 import Footer from "./components/Footer";
 
 import Home from './views/Home';
