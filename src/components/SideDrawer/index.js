@@ -1,31 +1,23 @@
 import React from 'react';
-import {
-    Link
-} from "react-router-dom";
 import {createUseStyles} from 'react-jss'
-import styles from './../../assets/jss/components/headerStyles'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import classNames from "classnames";
+import styles from './../../assets/jss/components/sideDrawerStyles'
 import headerLinks from "../../config/headerLinks";
+import {Link} from "react-router-dom";
 
 const useStyles = createUseStyles(styles);
 
-export default function Header(props) {
+export default function SideDrawer(props) {
 
     const classes = useStyles();
 
+    const sideDrawerClasses = classNames({
+        [classes.sideDrawerContainer]: true,
+        [classes.open]: props.show,
+    });
 
     return (
-        <div className={classes.headerContainer}>
-
-            <div className={classes.logoContainer}>
-                <button className={classes.hamburgerIcon} onClick={() => props.toggleNavDrawer()}>
-                    <FontAwesomeIcon icon="bars" />
-                </button>
-                <Link className={classes.logo} to={'/'}>
-                    <img src="http://placehold.it/150x50?text=Logo" alt=""/>
-                </Link>
-            </div>
-
+        <div className={sideDrawerClasses}>
             <div className={classes.navContainer}>
                 <ul>
                     {
@@ -42,4 +34,3 @@ export default function Header(props) {
         </div>
     );
 }
-
