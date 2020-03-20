@@ -23,7 +23,7 @@ export default function SideDrawer(props) {
                     {
                         headerLinks.map((item) => {
                             return (
-                                <li>
+                                <li key={item.title}>
                                     <Link to={ item.url }>{ item.title } </Link>
                                 </li>
                             )

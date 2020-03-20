@@ -14,4 +14,12 @@ html, body, #root, #root > div {
 .container {
   background-color: #fff !important; }
 
+.slick-prev {
+  left: 10px;
+  z-index: 5; }
+
+.slick-next {
+  right: 10px;
+  z-index: 5; }
+
 /*# sourceMappingURL=main.css.map */
