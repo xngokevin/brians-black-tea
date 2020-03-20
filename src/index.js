@@ -2,8 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'aos/dist/aos.css';
+import AOS from "aos";
 
-
+AOS.init({
+    duration : 2000
+});
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -17,7 +17,7 @@ export default function Header(props) {
     return (
         <div className={classes.headerContainer}>
 
-            <div className={classes.logoContainer}>
+            <div className={classes.logoContainer}  data-aos='fade-in'>
                 <button className={classes.hamburgerIcon} onClick={() => props.toggleNavDrawer()}>
                     <FontAwesomeIcon icon="bars" />
                 </button>
