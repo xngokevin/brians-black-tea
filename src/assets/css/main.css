@@ -26,6 +26,10 @@ html, body, #root, #root > div {
 
 .contentContainer {
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  padding-top: 160px; }
+  @media (max-width: 576px) {
+    .contentContainer {
+      padding-top: 100px; } }
 
 /*# sourceMappingURL=main.css.map */

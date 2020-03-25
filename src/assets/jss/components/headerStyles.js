@@ -1,17 +1,23 @@
 import breakpoints from "../../../config/breakpoints";
+import colors from "../../../config/colors";
 export default {
     headerContainer: {
+        position: 'fixed',
+        maxWidth: 1140,
         alignItems: 'center',
         flexDirection: 'column',
         borderBottomStyle: 'solid',
         borderBottomColor: '#f2f2f2',
-        borderBottomWidth: 1
+        borderBottomWidth: 1,
+        zIndex: 5,
+        backgroundColor: colors.white,
+        paddingBottom: 5
     },
     logoContainer: {
         position: 'relative',
         textAlign: 'center',
-        paddingTop: 10,
-        paddingBottom: 10
+        paddingTop: 20,
+        paddingBottom: 20,
     },
     hamburgerIcon: {
         position: 'absolute',

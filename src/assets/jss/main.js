@@ -8,6 +8,7 @@ export default {
         backgroundColor: colors.white,
         maxWidth: 1140,
         margin: 'auto',
-        height: '100%'
+        height: '100%',
+        position: 'relative'
     }
 }

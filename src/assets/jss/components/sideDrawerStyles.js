@@ -31,6 +31,9 @@ export default {
                 paddingLeft: 10,
                 paddingRight: 10,
                 paddingTop: 20,
+            },
+            '& a': {
+                color: colors.black
             }
         }
     }

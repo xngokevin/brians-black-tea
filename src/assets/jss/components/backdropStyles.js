@@ -7,7 +7,7 @@ export default {
         height: '100%',
         position: 'fixed',
         background: 'rgba(0,0,0,0.3)',
-        zIndex: 1
+        zIndex: 10
     },
 };
 

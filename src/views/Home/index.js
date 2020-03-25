@@ -3,6 +3,8 @@ import styles from "../../assets/jss/views/Home/homeStyles";
 import {createUseStyles} from "react-jss";
 import Carousel from "../../components/Carousel";
 import GalleryGrid from "../../components/GalleryGrid";
+import HorizontalLinks from "../../components/HorizontalLinks";
+import headerLinks from "../../config/headerLinks";
 
 const carouselImages = [
     {
@@ -27,6 +29,8 @@ export default function Home() {
         <div className={"contentContainer"}>
             <Carousel images={carouselImages}/>
             <GalleryGrid/>
+            <HorizontalLinks links={headerLinks}/>
+
         </div>
 
     );

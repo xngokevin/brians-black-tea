@@ -6,17 +6,20 @@ import {createUseStyles} from 'react-jss'
 import styles from './../../assets/jss/components/headerStyles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import headerLinks from "../../config/headerLinks";
+import HorizontalLinks from './../HorizontalLinks';
+import classNames from "classnames";
 
 const useStyles = createUseStyles(styles);
 
 export default function Header(props) {
 
     const classes = useStyles();
-
-
+    const container = classNames({
+        [classes.headerContainer]: true,
+        ["container"]: true,
+    });
     return (
-        <div className={classes.headerContainer}>
-
+        <div id="navHeader" className={container}>
             <div className={classes.logoContainer}  data-aos='fade-in'>
                 <button className={classes.hamburgerIcon} onClick={() => props.toggleNavDrawer()}>
                     <FontAwesomeIcon icon="bars" />
@@ -26,19 +29,7 @@ export default function Header(props) {
                 </Link>
             </div>
 
-            <div className={classes.navContainer}>
-                <ul>
-                    {
-                        headerLinks.map((item) => {
-                            return (
-                                <li key={item.title}>
-                                    <Link to={ item.url }>{ item.title } </Link>
-                                </li>
-                            )
-                        })
-                    }
-                </ul>
-            </div>
+            <HorizontalLinks links={headerLinks}/>
         </div>
     );
 }
